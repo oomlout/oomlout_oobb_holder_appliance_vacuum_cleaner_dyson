@@ -17,7 +17,7 @@ def make_scad(**kwargs):
         #filter = "test"
 
         kwargs["save_type"] = "none"
-        #kwargs["save_type"] = "all"
+        kwargs["save_type"] = "all"
         
         navigation = False
         #navigation = True    
@@ -49,9 +49,9 @@ def make_scad(**kwargs):
         
         part = copy.deepcopy(part_default)
         p3 = copy.deepcopy(kwargs)
-        p3["width"] = 3
+        p3["width"] = 5
         p3["height"] = 3
-        #p3["thickness"] = 6
+        p3["thickness"] = 6
         part["kwargs"] = p3
         part["name"] = "base"
         parts.append(part)
@@ -93,28 +93,86 @@ def get_base(thing, **kwargs):
     #pos = copy.deepcopy(pos)
     #pos[2] += -20
 
+    #dd the blank cylinder to work from
+    diameter_blank = 60
+    depth_insert = 50
+    depth_bottom = 3
+    depth_blank = depth_bottom + depth_insert 
+    clearance_wall = 18
+
     #add plate
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "p"
     p3["shape"] = f"oobb_plate"    
-    p3["depth"] = depth
+    p3["depth"] = diameter_blank/2 + clearance_wall
+    hei = (depth_blank+1)/15
+    p3["height"] = hei
     #p3["holes"] = True         uncomment to include default holes
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
+    pos1[1] += diameter_blank/2 + clearance_wall
+    pos1[2] += depth_insert/2 - depth_bottom/2
     p3["pos"] = pos1
+    rot1 = copy.deepcopy(rot)
+    rot1[0] = 90
+    p3["rot"] = rot1
     oobb_base.append_full(thing,**p3)
     
-    #add holes seperate
+    #add screw countersunk
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_screw_countersunk"
+    p3["both_holes"] = True  
+    p3["depth"] = diameter_blank/2 + clearance_wall
+    p3["clearance"] = "top"
+    p3["m"] = "#"    
+    shift = 30
+    shift_edge = 3      
+    pos1 = copy.deepcopy(pos)   
+    pos1[0] += shift
+    pos1[2] += shift_edge
+    pos2 = copy.deepcopy(pos)
+    pos2[0] += shift
+    pos2[2] += depth_insert - shift_edge - shift_edge
+    pos3 = copy.deepcopy(pos)
+    pos3[0] += -shift
+    pos3[2] += depth_insert - shift_edge - shift_edge
+    pos4 = copy.deepcopy(pos)
+    pos4[0] += -shift
+    pos4[2] += shift_edge
+
+
+    poss = []
+    poss.append(pos1)
+    poss.append(pos2)
+    poss.append(pos3)
+    poss.append(pos4)
+    p3["pos"] = poss
+    rot1 = copy.deepcopy(rot)
+    rot1[0] = 90
+    p3["rot"] = rot1
+
+    oobb_base.append_full(thing,**p3)
+
+
+    #main cyklinder
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "p"
-    p3["shape"] = f"oobb_holes"
-    p3["both_holes"] = True  
-    p3["depth"] = depth
-    p3["holes"] = "perimeter"
+    p3["shape"] = f"oobb_cylinder"
+    p3["radius"] = diameter_blank/2
+    dep = depth_blank
+    p3["depth"] = depth_blank
+    p3["holes"] = "none"
     #p3["m"] = "#"
-    pos1 = copy.deepcopy(pos)         
+    pos1 = copy.deepcopy(pos)
+    pos1[2] += dep/2 - depth_bottom
     p3["pos"] = pos1
     oobb_base.append_full(thing,**p3)
+
+    thing = add_appliance_vacuum_cleaner_dyson_motorhead_tool(thing, **kwargs)
+
+    p3 = copy.deepcopy(kwargs)
+
 
     if prepare_print:
         #put into a rotation object
@@ -137,7 +195,92 @@ def get_base(thing, **kwargs):
         p3["shape"] = f"oobb_slice"
         #p3["m"] = "#"
         oobb_base.append_full(thing,**p3)
-    
+
+
+def add_appliance_vacuum_cleaner_dyson_motorhead_tool(thing, **kwargs):
+    shift = kwargs.get("shift", [0, 0, 0])
+    pos = kwargs.get("pos", [0, 0, 0])
+
+    clearance = kwargs.get("clearance", "top")
+
+    ex = 2
+    diameter_small = 35    
+    depth_small = 37
+    diameter_big = 50
+    depth_big = 11
+    size_rectangle = [37.5, 2, depth_small]
+    size_rectangle_electronic_connector = [26, 22, 16]
+
+    #add center cutout
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_cylinder"
+    p3["radius"] = (diameter_small+ex)/2
+    dep = depth_small
+    p3["depth"] = depth_small
+    #p3["m"] = "#"
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += shift[0]
+    pos1[1] += shift[1]    
+    pos1[2] += shift[2] + dep / 2
+    p3["pos"] = pos1
+    oobb_base.append_full(thing,**p3)
+
+    #add rectangle
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_cube"
+    w = size_rectangle[0] + ex
+    h = size_rectangle[1] + ex
+    d = size_rectangle[2]
+    p3["size"] = [w, h, d]
+    #p3["m"] = "#"
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += shift[0]
+    pos1[1] += shift[1]
+    pos1[2] += shift[2]
+    p3["pos"] = pos1
+    oobb_base.append_full(thing,**p3)
+
+    #add big top piece
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_cylinder"
+    p3["radius"] = (diameter_big+ex)/2
+    dep = depth_small
+    dep = depth_big
+    if "top" in clearance:
+        dep = depth_big + 100
+    p3["depth"] = dep
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += shift[0]
+    pos1[1] += shift[1]
+    pos1[2] += shift[2] + dep / 2 + depth_small
+    #p3["m"] = "#"
+    p3["pos"] = pos1
+    oobb_base.append_full(thing,**p3)
+
+    #add rectangle electronic connector
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_cube"
+    w = size_rectangle_electronic_connector[0] + ex
+    h = size_rectangle_electronic_connector[1] + ex
+    d = size_rectangle_electronic_connector[2] + ex
+    p3["size"] = [w, h, d]
+    #p3["m"] = "#"
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += shift[0]
+    pos1[1] += shift[1] - diameter_big/2 + h/2
+    pos1[2] += shift[2] + depth_small - d
+    p3["pos"] = pos1
+    oobb_base.append_full(thing,**p3)
+
+
+
+
+    #add the small cylinder
+
 ###### utilities
 
 
