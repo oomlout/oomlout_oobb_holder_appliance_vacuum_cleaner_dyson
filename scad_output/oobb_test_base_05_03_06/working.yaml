@@ -19,7 +19,7 @@ name: base
 project_name: C:\gh\oomlout_oobb_holder_appliance_vacuum_cleaner_dyson
 thing:
   components:
-  - - depth: 48.0
+  - - depth: 68.0
       height: 3.6
       pos:
       - 0
@@ -33,27 +33,27 @@ thing:
       size:
       - 74
       - 53.0
-      - 48.0
+      - 68.0
       type: positive
       width: 5
   - - objects:
       - - clearance: top
-          depth: 48.0
-          h: 1.7
+          depth: 68.0
+          h: 3.75
           height: 3
           inclusion: laser
           m: '#'
           pos:
           - 0
           - 0
-          - -1.7
-          r1: 1.5
-          r2: 2.4
+          - -3.75
+          r1: 2.25
+          r2: 4.875
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: laser
@@ -62,65 +62,65 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 2.4
+            r: 4.875
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id001
           - 0
           - 0
-          - -48.0
-          r: 1.5
-          radius: 1.5
+          - -68.0
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id001
-          r: 1.5
+          r: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id001
-          r: 1.5
-          radius: 1.5
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
       - - clearance: top
-          depth: 48.0
-          h: 1.9
+          depth: 68.0
+          h: 4.2
           height: 3
           inclusion: 3dpr
           m: '#'
           pos:
           - 0
           - 0
-          - -1.9
-          r1: 1.8
-          r2: 3.6
+          - -4.2
+          r1: 2.75
+          r2: 5.5
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: 3dpr
@@ -129,65 +129,65 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 3.6
+            r: 5.5
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id002
           - 0
           - 0
-          - -48.0
-          r: 1.8
-          radius: 1.8
+          - -68.0
+          r: 2.75
+          radius: 2.75
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id002
-          r: 1.8
+          r: 2.75
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id002
-          r: 1.8
-          radius: 1.8
+          r: 2.75
+          radius: 2.75
           shape: cylinder
           type: positive
           width: 5
       - - clearance: top
-          depth: 48.0
-          h: 1.7
+          depth: 68.0
+          h: 3.75
           height: 3
           inclusion: 'true'
           m: '#'
           pos:
           - 0
           - 0
-          - -1.7
-          r1: 1.5
-          r2: 2.9
+          - -3.75
+          r1: 2.25
+          r2: 4.875
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: 'true'
@@ -196,51 +196,51 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 2.9
+            r: 4.875
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id003
           - 0
           - 0
-          - -48.0
-          r: 1.5
-          radius: 1.5
+          - -68.0
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id003
-          r: 1.5
+          r: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id003
-          r: 1.5
-          radius: 1.5
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
       pos:
       - 30
-      - 0
+      - -20
       - 3
       rot:
       - 90
@@ -250,22 +250,22 @@ thing:
       typetype: n
   - - objects:
       - - clearance: top
-          depth: 48.0
-          h: 1.7
+          depth: 68.0
+          h: 3.75
           height: 3
           inclusion: laser
           m: '#'
           pos:
           - 0
           - 0
-          - -1.7
-          r1: 1.5
-          r2: 2.4
+          - -3.75
+          r1: 2.25
+          r2: 4.875
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: laser
@@ -274,65 +274,65 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 2.4
+            r: 4.875
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id004
           - 0
           - 0
-          - -48.0
-          r: 1.5
-          radius: 1.5
+          - -68.0
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id004
-          r: 1.5
+          r: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id004
-          r: 1.5
-          radius: 1.5
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
       - - clearance: top
-          depth: 48.0
-          h: 1.9
+          depth: 68.0
+          h: 4.2
           height: 3
           inclusion: 3dpr
           m: '#'
           pos:
           - 0
           - 0
-          - -1.9
-          r1: 1.8
-          r2: 3.6
+          - -4.2
+          r1: 2.75
+          r2: 5.5
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: 3dpr
@@ -341,65 +341,65 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 3.6
+            r: 5.5
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id005
           - 0
           - 0
-          - -48.0
-          r: 1.8
-          radius: 1.8
+          - -68.0
+          r: 2.75
+          radius: 2.75
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id005
-          r: 1.8
+          r: 2.75
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id005
-          r: 1.8
-          radius: 1.8
+          r: 2.75
+          radius: 2.75
           shape: cylinder
           type: positive
           width: 5
       - - clearance: top
-          depth: 48.0
-          h: 1.7
+          depth: 68.0
+          h: 3.75
           height: 3
           inclusion: 'true'
           m: '#'
           pos:
           - 0
           - 0
-          - -1.7
-          r1: 1.5
-          r2: 2.9
+          - -3.75
+          r1: 2.25
+          r2: 4.875
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: 'true'
@@ -408,51 +408,51 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 2.9
+            r: 4.875
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id006
           - 0
           - 0
-          - -48.0
-          r: 1.5
-          radius: 1.5
+          - -68.0
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id006
-          r: 1.5
+          r: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id006
-          r: 1.5
-          radius: 1.5
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
       pos:
       - 30
-      - 0
+      - -20
       - 44
       rot:
       - 90
@@ -462,22 +462,22 @@ thing:
       typetype: n
   - - objects:
       - - clearance: top
-          depth: 48.0
-          h: 1.7
+          depth: 68.0
+          h: 3.75
           height: 3
           inclusion: laser
           m: '#'
           pos:
           - 0
           - 0
-          - -1.7
-          r1: 1.5
-          r2: 2.4
+          - -3.75
+          r1: 2.25
+          r2: 4.875
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: laser
@@ -486,65 +486,65 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 2.4
+            r: 4.875
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id007
           - 0
           - 0
-          - -48.0
-          r: 1.5
-          radius: 1.5
+          - -68.0
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id007
-          r: 1.5
+          r: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id007
-          r: 1.5
-          radius: 1.5
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
       - - clearance: top
-          depth: 48.0
-          h: 1.9
+          depth: 68.0
+          h: 4.2
           height: 3
           inclusion: 3dpr
           m: '#'
           pos:
           - 0
           - 0
-          - -1.9
-          r1: 1.8
-          r2: 3.6
+          - -4.2
+          r1: 2.75
+          r2: 5.5
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: 3dpr
@@ -553,65 +553,65 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 3.6
+            r: 5.5
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id008
           - 0
           - 0
-          - -48.0
-          r: 1.8
-          radius: 1.8
+          - -68.0
+          r: 2.75
+          radius: 2.75
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id008
-          r: 1.8
+          r: 2.75
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id008
-          r: 1.8
-          radius: 1.8
+          r: 2.75
+          radius: 2.75
           shape: cylinder
           type: positive
           width: 5
       - - clearance: top
-          depth: 48.0
-          h: 1.7
+          depth: 68.0
+          h: 3.75
           height: 3
           inclusion: 'true'
           m: '#'
           pos:
           - 0
           - 0
-          - -1.7
-          r1: 1.5
-          r2: 2.9
+          - -3.75
+          r1: 2.25
+          r2: 4.875
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: 'true'
@@ -620,51 +620,51 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 2.9
+            r: 4.875
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id009
           - 0
           - 0
-          - -48.0
-          r: 1.5
-          radius: 1.5
+          - -68.0
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id009
-          r: 1.5
+          r: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id009
-          r: 1.5
-          radius: 1.5
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
       pos:
       - -30
-      - 0
+      - -20
       - 44
       rot:
       - 90
@@ -674,22 +674,22 @@ thing:
       typetype: n
   - - objects:
       - - clearance: top
-          depth: 48.0
-          h: 1.7
+          depth: 68.0
+          h: 3.75
           height: 3
           inclusion: laser
           m: '#'
           pos:
           - 0
           - 0
-          - -1.7
-          r1: 1.5
-          r2: 2.4
+          - -3.75
+          r1: 2.25
+          r2: 4.875
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: laser
@@ -698,65 +698,65 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 2.4
+            r: 4.875
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id010
           - 0
           - 0
-          - -48.0
-          r: 1.5
-          radius: 1.5
+          - -68.0
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id010
-          r: 1.5
+          r: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id010
-          r: 1.5
-          radius: 1.5
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
       - - clearance: top
-          depth: 48.0
-          h: 1.9
+          depth: 68.0
+          h: 4.2
           height: 3
           inclusion: 3dpr
           m: '#'
           pos:
           - 0
           - 0
-          - -1.9
-          r1: 1.8
-          r2: 3.6
+          - -4.2
+          r1: 2.75
+          r2: 5.5
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: 3dpr
@@ -765,65 +765,65 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 3.6
+            r: 5.5
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id011
           - 0
           - 0
-          - -48.0
-          r: 1.8
-          radius: 1.8
+          - -68.0
+          r: 2.75
+          radius: 2.75
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id011
-          r: 1.8
+          r: 2.75
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id011
-          r: 1.8
-          radius: 1.8
+          r: 2.75
+          radius: 2.75
           shape: cylinder
           type: positive
           width: 5
       - - clearance: top
-          depth: 48.0
-          h: 1.7
+          depth: 68.0
+          h: 3.75
           height: 3
           inclusion: 'true'
           m: '#'
           pos:
           - 0
           - 0
-          - -1.7
-          r1: 1.5
-          r2: 2.9
+          - -3.75
+          r1: 2.25
+          r2: 4.875
           shape: cylinder
           type: positive
           width: 5
       - - - clearance: top
-            depth: 48.0
+            depth: 68.0
             h: 50
             height: 3
             inclusion: 'true'
@@ -832,51 +832,51 @@ thing:
             - 0
             - 0
             - 0.0
-            r: 2.9
+            r: 4.875
             shape: cylinder
             type: positive
             width: 5
       - - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: laser
           m: '#'
           pos: &id012
           - 0
           - 0
-          - -48.0
-          r: 1.5
-          radius: 1.5
+          - -68.0
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 3dpr
           m: '#'
           pos: *id012
-          r: 1.5
+          r: 2.25
           shape: cylinder
           type: positive
           width: 5
         - clearance: top
-          depth: 48.0
-          h: 48.0
+          depth: 68.0
+          h: 68.0
           height: 3
           inclusion: 'true'
           m: '#'
           pos: *id012
-          r: 1.5
-          radius: 1.5
+          r: 2.25
+          radius: 2.25
           shape: cylinder
           type: positive
           width: 5
       pos:
       - -30
-      - 0
+      - -20
       - 3
       rot:
       - 90
@@ -922,7 +922,7 @@ thing:
       inclusion: laser
       pos: &id014
       - 0
-      - 0
+      - -4.5
       - 0.0
       r: 18.5
       radius: 18.5
@@ -951,7 +951,7 @@ thing:
   - - - height: 3
         pos:
         - -19.75
-        - -2.0
+        - -6.5
         - 0
         shape: cube
         size:
@@ -994,18 +994,18 @@ thing:
       width: 5
   - - - height: 3
         pos:
-        - -14.0
+        - -14.5
         - -25.0
         - 19
         shape: cube
         size:
-        - 28
+        - 29
         - 24
         - 18
         type: negative
         width: 5
   components_objects:
-  - depth: 48.0
+  - depth: 68.0
     height: 3.6
     modes:
     - 3dpr
@@ -1023,9 +1023,8 @@ thing:
     thickness: 6
     type: p
     width: 5
-  - both_holes: true
-    clearance: top
-    depth: 48.0
+  - clearance: top
+    depth: 68.0
     height: 3
     m: '#'
     modes:
@@ -1033,8 +1032,9 @@ thing:
     overwrite: true
     pos:
     - 30
-    - 0
+    - -20
     - 3
+    radius_name: m5_screw_wood
     rot:
     - 90
     - 0
@@ -1044,9 +1044,8 @@ thing:
     thickness: 6
     type: n
     width: 5
-  - both_holes: true
-    clearance: top
-    depth: 48.0
+  - clearance: top
+    depth: 68.0
     height: 3
     m: '#'
     modes:
@@ -1054,8 +1053,9 @@ thing:
     overwrite: true
     pos:
     - 30
-    - 0
+    - -20
     - 44
+    radius_name: m5_screw_wood
     rot:
     - 90
     - 0
@@ -1065,9 +1065,8 @@ thing:
     thickness: 6
     type: n
     width: 5
-  - both_holes: true
-    clearance: top
-    depth: 48.0
+  - clearance: top
+    depth: 68.0
     height: 3
     m: '#'
     modes:
@@ -1075,8 +1074,9 @@ thing:
     overwrite: true
     pos:
     - -30
-    - 0
+    - -20
     - 44
+    radius_name: m5_screw_wood
     rot:
     - 90
     - 0
@@ -1086,9 +1086,8 @@ thing:
     thickness: 6
     type: n
     width: 5
-  - both_holes: true
-    clearance: top
-    depth: 48.0
+  - clearance: top
+    depth: 68.0
     height: 3
     m: '#'
     modes:
@@ -1096,8 +1095,9 @@ thing:
     overwrite: true
     pos:
     - -30
-    - 0
+    - -20
     - 3
+    radius_name: m5_screw_wood
     rot:
     - 90
     - 0
@@ -1130,7 +1130,7 @@ thing:
     overwrite: true
     pos:
     - 0
-    - 0
+    - -4.5
     - 18.5
     radius: 18.5
     save_type: all
@@ -1144,7 +1144,7 @@ thing:
     overwrite: true
     pos:
     - 0
-    - 0
+    - -4.5
     - 0
     save_type: all
     shape: oobb_cube
@@ -1181,25 +1181,25 @@ thing:
     save_type: all
     shape: oobb_cube
     size:
-    - 28
+    - 29
     - 24
     - 18
     thickness: 6
     type: n
     width: 5
   components_string:
-  - oobb_plate_shape_p_type_48.0_depth_0_48.0_23.5_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3.6_height_6_thickness_90_0_0_rot
-  - oobb_screw_countersunk_shape_n_type_48.0_depth_30_0_3_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_true_both_holes_top_clearance_90_0_0_rot
-  - oobb_screw_countersunk_shape_n_type_48.0_depth_30_0_44_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_true_both_holes_top_clearance_90_0_0_rot
-  - oobb_screw_countersunk_shape_n_type_48.0_depth_-30_0_44_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_true_both_holes_top_clearance_90_0_0_rot
-  - oobb_screw_countersunk_shape_n_type_48.0_depth_-30_0_3_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_true_both_holes_top_clearance_90_0_0_rot
+  - oobb_plate_shape_p_type_68.0_depth_0_48.0_23.5_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3.6_height_6_thickness_90_0_0_rot
+  - oobb_screw_countersunk_shape_n_type_m5_screw_wood_radius_name_68.0_depth_30_-20_3_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_top_clearance_90_0_0_rot
+  - oobb_screw_countersunk_shape_n_type_m5_screw_wood_radius_name_68.0_depth_30_-20_44_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_top_clearance_90_0_0_rot
+  - oobb_screw_countersunk_shape_n_type_m5_screw_wood_radius_name_68.0_depth_-30_-20_44_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_top_clearance_90_0_0_rot
+  - oobb_screw_countersunk_shape_n_type_m5_screw_wood_radius_name_68.0_depth_-30_-20_3_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_top_clearance_90_0_0_rot
   - oobb_cylinder_shape_p_type_53_depth_0_0_23.5_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_30.0_radius_none_holes
-  - oobb_cylinder_shape_n_type_37_depth_0_0_18.5_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_18.5_radius
-  - oobb_cube_shape_n_type_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_39.5_4_37_size
+  - oobb_cylinder_shape_n_type_37_depth_0_-4.5_18.5_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_18.5_radius
+  - oobb_cube_shape_n_type_0_-4.5_0_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_39.5_4_37_size
   - oobb_cylinder_shape_n_type_111_depth_0_0_92.5_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_26.0_radius
-  - oobb_cube_shape_n_type_0_-13.0_19_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_28_24_18_size
+  - oobb_cube_shape_n_type_0_-13.0_19_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_29_24_18_size
   description: test base 5x3x6
-  folder: C:\gh\oomlout_oobb_version_4_generated_parts\thigns\oobb_test_base_05_03_06
+  folder: C:\gh\oomlout_oobb_version_4_generated_parts\things\oobb_test_base_05_03_06
   height: 3
   height_mm: 44
   id: oobb_test_base_05_03_06

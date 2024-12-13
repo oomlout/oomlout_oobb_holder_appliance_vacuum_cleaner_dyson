@@ -17,7 +17,7 @@ def make_scad(**kwargs):
         #filter = "test"
 
         kwargs["save_type"] = "none"
-        kwargs["save_type"] = "all"
+        #kwargs["save_type"] = "all"
         
         navigation = False
         #navigation = True    
@@ -99,13 +99,16 @@ def get_base(thing, **kwargs):
     depth_bottom = 3
     depth_blank = depth_bottom + depth_insert 
     clearance_wall = 18
+    clearance_scre_depth_extra = 20
 
     #add plate
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "p"
     p3["shape"] = f"oobb_plate"    
-    p3["depth"] = diameter_blank/2 + clearance_wall
+    p3["depth"] = diameter_blank/2 + clearance_wall + clearance_scre_depth_extra
+    #wid = (width) + 5/15
     hei = (depth_blank+1)/15
+    #p3["width"] = wid
     p3["height"] = hei
     #p3["holes"] = True         uncomment to include default holes
     #p3["m"] = "#"
@@ -122,23 +125,29 @@ def get_base(thing, **kwargs):
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "n"
     p3["shape"] = f"oobb_screw_countersunk"
-    p3["both_holes"] = True  
-    p3["depth"] = diameter_blank/2 + clearance_wall
+    p3["radius_name"] = "m5_screw_wood"
+    dep = diameter_blank/2 + clearance_wall + clearance_scre_depth_extra
+    p3["depth"] = dep
     p3["clearance"] = "top"
     p3["m"] = "#"    
     shift = 30
+    shift_y = -clearance_scre_depth_extra
     shift_edge = 3      
     pos1 = copy.deepcopy(pos)   
     pos1[0] += shift
+    pos1[1] += shift_y
     pos1[2] += shift_edge
     pos2 = copy.deepcopy(pos)
     pos2[0] += shift
+    pos2[1] += shift_y
     pos2[2] += depth_insert - shift_edge - shift_edge
     pos3 = copy.deepcopy(pos)
     pos3[0] += -shift
+    pos3[1] += shift_y
     pos3[2] += depth_insert - shift_edge - shift_edge
     pos4 = copy.deepcopy(pos)
     pos4[0] += -shift
+    pos4[1] += shift_y
     pos4[2] += shift_edge
 
 
@@ -209,7 +218,9 @@ def add_appliance_vacuum_cleaner_dyson_motorhead_tool(thing, **kwargs):
     diameter_big = 50
     depth_big = 11
     size_rectangle = [37.5, 2, depth_small]
-    size_rectangle_electronic_connector = [26, 22, 16]
+    size_rectangle_electronic_connector = [27, 22, 16]
+
+    shift_center_y = -4.5
 
     #add center cutout
     p3 = copy.deepcopy(kwargs)
@@ -221,7 +232,7 @@ def add_appliance_vacuum_cleaner_dyson_motorhead_tool(thing, **kwargs):
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)
     pos1[0] += shift[0]
-    pos1[1] += shift[1]    
+    pos1[1] += shift[1]  + shift_center_y  
     pos1[2] += shift[2] + dep / 2
     p3["pos"] = pos1
     oobb_base.append_full(thing,**p3)
@@ -237,7 +248,7 @@ def add_appliance_vacuum_cleaner_dyson_motorhead_tool(thing, **kwargs):
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)
     pos1[0] += shift[0]
-    pos1[1] += shift[1]
+    pos1[1] += shift[1] + shift_center_y
     pos1[2] += shift[2]
     p3["pos"] = pos1
     oobb_base.append_full(thing,**p3)
