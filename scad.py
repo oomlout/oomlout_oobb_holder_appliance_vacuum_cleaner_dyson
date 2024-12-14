@@ -279,10 +279,10 @@ def add_appliance_vacuum_cleaner_dyson_motorhead_tool(thing, **kwargs):
     h = size_rectangle_electronic_connector[1] + ex
     d = size_rectangle_electronic_connector[2] + ex
     p3["size"] = [w, h, d]
-    #p3["m"] = "#"
+    p3["m"] = "#"
     pos1 = copy.deepcopy(pos)
     pos1[0] += shift[0]
-    pos1[1] += shift[1] - diameter_big/2 + h/2
+    pos1[1] += shift[1] + diameter_big/2 - h/2
     pos1[2] += shift[2] + depth_small - d
     p3["pos"] = pos1
     oobb_base.append_full(thing,**p3)

@@ -993,9 +993,10 @@ thing:
       type: negative
       width: 5
   - - - height: 3
+        m: '#'
         pos:
         - -14.5
-        - -25.0
+        - 1.0
         - 19
         shape: cube
         size:
@@ -1171,12 +1172,13 @@ thing:
     type: n
     width: 5
   - height: 3
+    m: '#'
     modes:
     - 3dpr
     overwrite: true
     pos:
     - 0
-    - -13.0
+    - 13.0
     - 19
     save_type: all
     shape: oobb_cube
@@ -1197,7 +1199,7 @@ thing:
   - oobb_cylinder_shape_n_type_37_depth_0_-4.5_18.5_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_18.5_radius
   - oobb_cube_shape_n_type_0_-4.5_0_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_39.5_4_37_size
   - oobb_cylinder_shape_n_type_111_depth_0_0_92.5_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_26.0_radius
-  - oobb_cube_shape_n_type_0_-13.0_19_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_29_24_18_size
+  - oobb_cube_shape_n_type_0_13.0_19_pos_all_save_type_true_overwrite_'3dpr'_modes_5_width_3_height_6_thickness_29_24_18_size
   description: test base 5x3x6
   folder: C:\gh\oomlout_oobb_version_4_generated_parts\things\oobb_test_base_05_03_06
   height: 3
