@@ -1,6 +1,6 @@
 project_id: oomlout_oobb_holder_appliance_vacuum_cleaner_dyson
 project_name: Oomlout Oobb Holder Appliance Vacuum Cleaner Dyson
 project_repo: https://github.com/oomlout/oomlout_oobb_holder_appliance_vacuum_cleaner_dyson
-production_format:
-  oolc_1:
-    file_location: source_files/oolc_1.cdr
+#production_format:
+#  oolc_1:
+#    file_location: source_files/oolc_1.cdr
